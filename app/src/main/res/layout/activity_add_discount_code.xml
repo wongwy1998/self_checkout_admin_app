@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    >
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/CDC"
+        app:title="Create Discount Code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CDC">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginTop="20dp"
+            android:id="@+id/showLayout"
+            android:layout_below="@+id/CDC"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discount Code: "
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/VDis"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+
+            <EditText
+                android:id="@+id/disCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Discount Code"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description Header:"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/VDescH"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+
+            <EditText
+                android:id="@+id/disDescHead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Desc Header"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description:"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:id="@+id/VDesc"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+
+            <EditText
+                android:id="@+id/disDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Desc"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate:"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:id="@+id/VRate"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+            <EditText
+                android:id="@+id/disRate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rate"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:inputType="numberDecimal"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Redemption:"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:id="@+id/VTRede"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+            <EditText
+                android:id="@+id/disRedeem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Total Redemption"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Limit Per User:"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:id="@+id/VLimit"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+            <EditText
+                android:id="@+id/disLimit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Limit"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Maximum Discount Amount"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:id="@+id/VMaxDiscount"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+            <EditText
+                android:id="@+id/disMaxDiscount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Max Discount Amount"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Minimum Purchase Amount(RM):"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:id="@+id/VMinPurchase"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/red"/>
+            <EditText
+                android:id="@+id/disMinPurchase"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Min purchase amount"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+
+                <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expired Date:"
+            android:layout_marginTop="15dp"
+            android:textSize="20dp"
+            android:id="@+id/VDate"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@color/red"/>
+        <TextView
+            android:id="@+id/disExpiredDateCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expired date"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+
+            />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create"
+                android:id="@+id/btnCreate"
+                android:background="@drawable/buttons"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/showLayout"
+                />
+        </LinearLayout>
+    </ScrollView>
+            </RelativeLayout>

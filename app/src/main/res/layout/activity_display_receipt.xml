@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".DisplayReceiptActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:title="Display Receipt " />
+
+    <androidx.cardview.widget.CardView
+    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ToolbarRec">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ToolbarRec">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/receiptTop"
+
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="120dp"
+            android:id="@+id/receiptcName"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/receiptlay1"
+            android:layout_below="@+id/receiptcName">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/receiptDate"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Date"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/receiptcName"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/receiptTime"
+            android:textColor="@color/red"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Time"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/receiptDate"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/receiptcName"
+            />
+
+
+        </LinearLayout>
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Status"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            android:layout_marginLeft="120dp"-->
+<!--            android:id="@+id/receiptStatus"-->
+<!--            android:layout_below="@id/receiptlay1"-->
+<!--            />-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:id="@+id/tscIDV"
+            android:text="Transaction ID:"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_below="@+id/receiptlay1"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="transaction id"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/receiptid"
+            android:layout_below="@+id/tscIDV"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:id="@+id/tscPV"
+            android:text="Payment Method:"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tscIDV"
+            android:layout_marginLeft="60dp"
+            android:layout_below="@+id/receiptlay1"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment method"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/tscPV"
+            android:id="@+id/receiptPayment"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/receiptid"
+            />
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/receiptRecycler"
+        android:layout_below="@+id/receiptTop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receiptRecycler"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Subtotal:"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:id="@+id/receiptsubtotalV"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM1100.00"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:id="@+id/receiptsubtotal"
+                    android:layout_toRightOf="@+id/receiptsubtotalV"
+                    android:layout_gravity="end"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Discount:"
+                        android:layout_below="@+id/receiptsubtotalV"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:id="@+id/receiptdiscountV"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="5dp"
+                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-RM100.00"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/receiptsubtotal"
+                    android:id="@+id/receiptdiscount"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/receiptdiscountV"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="5dp"
+                    />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total:"
+                        android:layout_below="@+id/receiptdiscountV"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:id="@+id/receipttotalV"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="5dp"
+                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RM1000.00"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:id="@+id/receipttotal"
+                    android:gravity="end"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/receiptsubtotalV"
+                    android:layout_below="@+id/receiptdiscount"
+                    android:layout_marginTop="5dp"
+                    />
+                </RelativeLayout>
+            </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Verify"
+        android:background="@drawable/buttons"
+        android:textColor="@color/white"
+        android:id="@+id/btnVerify"
+        />
+        </LinearLayout>
+   </RelativeLayout>
+    </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:orientation="vertical"
+
+    >
+
+
+<androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:background="@color/white"
+        android:id="@+id/ll1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:id="@+id/ll2">
+
+        <TextView
+            android:id="@+id/Customerid"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Customer Phone"
+            android:layout_marginLeft="10dp">
+
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/tsc_id"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Transaction ID"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/Customerid">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tsc_date"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Date"
+            android:layout_marginLeft="180dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tsc_time"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/grey"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Time"
+            android:layout_toRightOf="@id/tsc_date"
+
+            android:layout_marginLeft="5dp">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/tsc_total"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="AMOUNT"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tsc_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Discount"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+           android:layout_alignParentRight="true"
+            android:layout_below="@+id/tsc_total"
+            >
+
+        </TextView>
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="20dp"
+           android:layout_below="@+id/tsc_id"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:id="@+id/tsc_status"
+           android:layout_marginTop="10dp"
+           android:text="Status"
+           android:layout_marginLeft="10dp"
+
+           />
+
+
+    </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+</LinearLayout>

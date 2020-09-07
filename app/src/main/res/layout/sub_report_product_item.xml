@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_design"
+               >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Product Name:"
+                    android:textColor="@color/black"
+                    android:id="@+id/ReportProName1V"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity Sold:"
+                    android:textSize="20dp"
+                    android:id="@+id/ReportOpeningStock1V"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Sold Price:"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/ReportOpeningStock1"
+                    android:id="@+id/ReportSold1V"
+                    android:layout_marginLeft="10dp"
+                    />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Milk"
+                            android:textColor="@color/black"
+                            android:id="@+id/ReportProName"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="20"
+                            android:textSize="20dp"
+                            android:id="@+id/ReportSoldQty"
+                            android:textColor="@color/black"
+                            android:layout_marginLeft="10dp"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="RM 1000"
+                            android:textSize="20dp"
+                            android:textColor="@color/black"
+                            android:id="@+id/ReportTotalSold"
+                            android:layout_marginLeft="10dp"
+                            />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

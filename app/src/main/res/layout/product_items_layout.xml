@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_design">
+
+            <TextView
+                android:id="@+id/product_BarcodeV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Product Barcode:"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="20dp"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/product_Barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/product_BarcodeV"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_below="@id/product_Barcode"
+                android:id="@+id/product_disLayout"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:id="@+id/product_image"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    >
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:id="@+id/prodLa"
+                android:weightSum="2"
+                android:layout_below="@+id/product_disLayout"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:weightSum="2">
+                    <TextView
+                        android:id="@+id/product_nameV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name:"
+                        android:layout_weight="1"
+                        android:textColor="@color/grey"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/product_cateV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category:"
+                        android:layout_weight="1"
+                        android:textColor="@color/grey"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="50dp"
+                        />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        >
+                    <TextView
+                        android:id="@+id/product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product Name"
+                        android:textColor="@color/black"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="18dp"
+
+                       />
+                    <TextView
+                        android:id="@+id/product_Category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Washing Component"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="50dp"
+
+
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/layoutQtyV"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/prodLa"
+                >
+                <TextView
+                    android:id="@+id/product_currentStockV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Stock:"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/product_soldV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sold:"
+                    android:layout_weight="1"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="30dp"
+                    >
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/layoutQty"
+                android:layout_marginTop="1dp"
+                android:layout_below="@+id/layoutQtyV"
+                >
+                <TextView
+                    android:id="@+id/product_CurrentQty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center"
+                    android:layout_weight="1">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/product_sold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/product_name"
+                    android:layout_marginTop="5dp"
+                    android:textAlignment="center">
+
+                </TextView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.8sp"
+                android:background="@color/grey"
+                android:layout_below="@+id/layoutQty"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/layoutPrice"
+                android:layout_below="@+id/divider">
+                <TextView
+                    android:id="@+id/product_priceV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutQty"
+                    android:text="Price: "
+                    android:textColor="@color/grey"
+                    android:textSize="14dp"
+                    android:layout_marginTop="1dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="15dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/product_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutQty"
+                    android:text="RM 100 "
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="15dp"
+                    android:layout_marginLeft="1dp"
+                    android:textAlignment="viewStart">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/product_disV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutQty"
+                    android:text="Discount Rate: "
+                    android:textColor="@color/grey"
+                    android:textSize="14dp"
+                    android:layout_marginTop="1dp"
+                    android:textAlignment="center"
+                    android:layout_marginLeft="10dp"
+                    android:paddingLeft="15dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/proD1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.1"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_marginTop="1dp"
+                    android:paddingLeft="5dp"
+                    android:layout_marginLeft="1dp"
+                    android:textAlignment="viewStart">
+
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/layoutPrice"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:id="@+id/detail_weight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Weight:"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp"
+                    android:paddingLeft="15dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/detail_location"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Location:"
+                    android:textColor="@color/grey"
+                    android:textSize="12dp"
+                    android:paddingLeft="15dp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/ln1"
+                android:layout_marginTop="5dp">
+
+
+                <TextView
+                    android:id="@+id/product_weight"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="2 kg"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:paddingLeft="15dp"
+                   >
+
+                </TextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="100dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/location_zoneV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Zone:"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/product_zone1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Alcohol "
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="2dp"
+                        >
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/location_shelfV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shelf:"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="10dp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:id="@+id/product_shelf1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="1"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:textAlignment="center">
+
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ln2"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="0.8sp"
+                android:layout_below="@+id/ln3"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/detail_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/divider3"
+                android:text="Description: "
+                android:textColor="@color/grey"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="15dp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/product_description1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_description"
+                android:text="abcd"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="15dp">
+
+            </TextView>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

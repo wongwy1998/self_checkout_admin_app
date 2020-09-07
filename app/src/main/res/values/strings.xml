@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">self_checkout_admin</string>
+
+
+    <string name="pBarcode">Barcode:</string>
+    <string name="pname">Product Name:</string>
+    <string name="pCategory">Category:</string>
+    <string name="pDesc">Description:</string>
+    <string name="pQuantity">Quantity:</string>
+    <string name="pPrice">Price:</string>
+    <string name="pExpDate">Expire Date:</string>
+
+
+    <array name="pcategory">
+        <item>Daily Basis</item>
+        <item>Detergent</item>
+        <item>Drinks</item>
+        <item>Electric Component</item>
+        <item>Foods</item>
+        <item>Kitchen Component</item>
+        <item>Washing Component</item>
+
+
+    </array>
+
+    <array name="zone">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>Alcohol</item>
+        <item>Dairy</item>
+        <item>Meat</item>
+        <item>Seafood</item>
+        <item>Produce</item>
+
+    </array>
+
+    <array name="Shelf">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+
+    </array>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

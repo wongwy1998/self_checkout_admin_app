@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductFragment"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Product Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize" />
+
+
+    <RelativeLayout
+        android:id="@+id/addProd"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:background="@drawable/input_design"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btnaddpro"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:src="@drawable/add"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Add"
+            android:id="@+id/Taddpro"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/btnaddpro"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@drawable/input_design"
+        android:layout_toRightOf="@+id/addProd"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/disP"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btndispro"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:src="@drawable/writing"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Quantity Update"
+            android:id="@+id/Tdispro"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/btndispro"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:background="@drawable/input_design"
+        android:layout_below="@+id/disP"
+        android:layout_toRightOf="@+id/searP"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center_horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btnScanProduct"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:src="@drawable/barcode"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Scan"
+            android:id="@+id/Tscanpro"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/btnScanProduct"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:background="@drawable/input_design"
+        android:id="@+id/searP"
+        android:layout_below="@+id/addProd"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:src="@drawable/info"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Search"
+            android:id="@+id/Tsearchpro"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/btnSearch"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

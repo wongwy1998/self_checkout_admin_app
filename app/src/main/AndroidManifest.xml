@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="my.edu.tarc.self_checkout_admin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/cover"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".CustomerPurchaseItem" />
+        <activity android:name=".Update_Quantity" />
+        <activity android:name=".SummaryReport" />
+        <activity android:name=".UpdateQtyScan" />
+        <activity android:name=".CustomerTransactionActivity" />
+        <activity android:name=".search_product" />
+        <activity android:name=".PromoMenu" />
+        <activity android:name=".ScanReceiptActivity" />
+        <activity android:name=".DisplayReceiptActivity" />
+        <activity android:name=".Display_Promo_code" />
+        <activity android:name=".HomeActivity"/>
+
+        <activity android:name=".DisplayActivity3" />
+        <activity android:name=".CustomerTranActivity" />
+        <activity android:name=".Location" />
+        <activity android:name=".HomeFragment" />
+        <activity android:name=".EditProductActivity" />
+        <activity android:name=".ProductFragment" />
+        <activity android:name=".ScanCodeActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ScanCode2Activity" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReportMenuActivity" />
+        <activity android:name=".DisplayActivity2" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.exportcsv.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

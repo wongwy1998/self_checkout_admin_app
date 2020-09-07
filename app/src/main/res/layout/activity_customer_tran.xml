@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerTranActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarTr"
+        app:title="Customer Transaction History"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/search5"
+                android:weightSum="2"
+                android:layout_below="@+id/ToolbarTr">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Date"
+                    android:textSize="20dp"
+                    android:id="@+id/inputReportDate"
+                    android:textAlignment="center"
+                    android:background="@color/white"
+                    android:minHeight="?attr/actionBarSize"
+                    android:layout_marginLeft="20dp"
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Show"
+                    android:textSize="20dp"
+                    android:id="@+id/btnShow"
+                    android:textColor="@color/white"
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/customerRecycler"
+        android:layout_below="@+id/search5"
+                android:layout_marginTop="5dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Excel Form"
+        android:id="@+id/btnTransactionExcel"
+        android:layout_below="@+id/customerRecycler"/>
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReportMenuActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarS"
+        app:title="Report Menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize" />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/toolbarS"
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:background="@drawable/input_design"
+        android:id="@+id/pL4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"
+        >
+
+        <ImageButton
+            android:id="@+id/btnViewReport"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:src="@drawable/ic_report"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Sales Report"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/btnViewReport"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:background="@drawable/input_design"
+        android:layout_below="@+id/pL4"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left"
+        android:id="@+id/pL5"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btnCustomerT"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:src="@drawable/data"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Transaction"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/btnCustomerT"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:background="@drawable/input_design"
+        android:layout_below="@+id/toolbarS"
+        android:layout_toRightOf="@+id/pL4"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/pL6"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btnSummaryReport"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:src="@drawable/sreport"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Summary Report"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/btnSummaryReport"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="170dp"
+        android:layout_height="220dp"
+        android:background="@drawable/input_design"
+        android:layout_below="@+id/pL6"
+        android:layout_toRightOf="@+id/pL5"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+
+        >
+
+        <ImageButton
+            android:id="@+id/btnScanReceipt"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="7dp"
+            android:src="@drawable/barcode"
+            android:scaleType="fitXY"
+            android:background="@color/white"
+            />
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:text="Scan Receipt"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:layout_below="@+id/btnScanReceipt"
+            android:background="@drawable/buttons"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    </RelativeLayout>

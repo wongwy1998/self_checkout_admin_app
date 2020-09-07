@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="15dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="@color/white"
+        android:id="@+id/relative1">
+
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="190dp"
+            android:id="@+id/imageP"
+            />
+
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Product Name"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/imageP">
+
+        </TextView>
+
+
+
+
+
+        <TextView
+            android:id="@+id/productWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Weight"
+            android:layout_toRightOf="@id/imageP"
+            android:layout_below="@id/productName"
+            android:layout_marginLeft="5dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/productQty"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Quantity"
+            android:layout_toRightOf="@id/productWeight"
+            android:layout_below="@id/productName"
+            android:layout_marginLeft="50dp">
+
+        </TextView>
+
+
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="Unit Price"
+            android:layout_below="@id/productWeight"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/imageP"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/productDiscount"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="Discount"
+            android:layout_toRightOf="@id/imageP"
+            android:layout_below="@+id/productPrice"
+            android:layout_marginLeft="5dp">
+
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>

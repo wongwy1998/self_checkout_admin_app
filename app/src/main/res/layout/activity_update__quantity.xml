@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+  >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/red">
+
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolbarLoc"
+        app:title="Update Product Quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="?attr/actionBarSize"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="30dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="15dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/product_BarcodeV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Product Barcode:"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="20dp"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/product_Barcode2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/product_BarcodeV"/>
+
+
+            <TextView
+                android:layout_below="@+id/product_Barcode2"
+                android:id="@+id/product_currentStockV3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update Stock:"
+                android:textColor="@color/grey"
+                android:textSize="20dp"
+                android:textAlignment="viewStart"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1">
+
+            </TextView>
+
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product_currentStockV3"
+                android:hint="Update Quantity"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:id="@+id/updateQty"
+                />
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Confirm"
+    android:layout_below="@id/updateQty"
+    android:id="@+id/btnc1"
+    ></Button>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+
+

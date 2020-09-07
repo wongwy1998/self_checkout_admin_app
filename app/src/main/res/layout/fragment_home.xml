@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment"
+    android:id="@+id/frag_container">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textMenu"
+        android:orientation="horizontal">
+
+
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       android:gravity="center_horizontal"
+       android:text="Staff Menu"
+       android:textSize="20dp"
+       android:textStyle="bold"
+       android:textColor="@color/red"
+       />
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textMenu"
+            android:layout_margin="15dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:background="@drawable/input_design"
+                android:id="@+id/pLa"
+
+
+               >
+
+                <ImageButton
+                    android:id="@+id/pbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/inventoryicon"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="7dp"
+                    android:text="Product"
+                    android:scaleType="fitXY"
+                    android:background="@color/white"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:text="Inventory"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/pbtn"
+                    android:background="@drawable/buttons"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:background="@drawable/input_design"
+                android:layout_toRightOf="@+id/pLa"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/pLa1">
+
+                <ImageButton
+                    android:id="@+id/pmbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/promotion"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="7dp"
+                    android:scaleType="fitXY"
+
+                   />
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="10dp"
+                    android:text="Promo"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/pmbtn"
+                    android:background="@drawable/buttons"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:background="@drawable/input_design"
+                 android:layout_below="@+id/pLa"
+                android:layout_marginTop="20dp"
+                android:id="@+id/pLa2"
+
+
+                >
+
+                <ImageButton
+                    android:id="@+id/rbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:background="@drawable/report"
+                    android:scaleType="fitXY"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="7dp"
+                     />
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:text="Report"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/rbtn"
+                    android:background="@drawable/buttons"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="220dp"
+                android:background="@drawable/input_design"
+                android:layout_below="@+id/pLa1"
+                android:layout_toRightOf="@+id/pLa2"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+
+
+                >
+
+                <ImageButton
+                    android:id="@+id/lbtn"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="7dp"
+                    android:src="@drawable/map"
+                    android:scaleType="fitXY"
+                    android:background="@color/white"
+                    />
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:text="Location"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:layout_below="@+id/lbtn"
+                    android:background="@drawable/buttons"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

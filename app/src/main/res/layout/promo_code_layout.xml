@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:background="@color/white"
+            android:id="@+id/promo1">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_design"
+                android:id="@+id/promo2"
+                >
+
+                <TextView
+                    android:id="@+id/descHead"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Description Header"
+                    android:textSize="20dp"
+                    android:inputType="text"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerHorizontal="true"
+                    />
+                <View
+                    android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8sp"
+                    android:background="@color/grey"
+                    android:layout_below="@+id/descHead"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ExpiryL"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/divider1">
+                    <TextView
+                        android:id="@+id/ExpiryDateV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Expiry Date:"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        />
+                <TextView
+                    android:id="@+id/ExpiryDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text=" 20-12-2019"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="10dp"
+                    />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ExpiryL"
+                    android:orientation="vertical"
+                    android:id="@+id/disL1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/disL2">
+
+                <TextView
+                    android:id="@+id/CodeV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/grey"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="Code:"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="20dp">
+
+                </TextView>
+
+                    <TextView
+                        android:id="@+id/LimitV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textColor="@color/grey"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:text="Total Redemption:"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="80dp">
+
+                    </TextView>
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+
+                        <TextView
+                            android:id="@+id/Code1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:text="HAPPYNEWYEAR"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="30dp">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/TotalRe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/descHead"
+                            android:layout_marginTop="10dp"
+                            android:text="500"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="100dp">
+
+                        </TextView>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8sp"
+                    android:background="@color/grey"
+                    android:layout_below="@+id/disL1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:id="@+id/CodeDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="10dp"
+                    android:text="Description"
+                    android:textSize="15dp"
+                    android:inputType="text"
+                    android:layout_below="@+id/disL1"
+                    android:layout_marginLeft="20dp"
+
+                    />
+
+
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8sp"
+                    android:background="@color/grey"
+                    android:layout_below="@+id/CodeDesc"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/disL5"
+                    android:layout_below="@+id/divider2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/disL3">
+
+
+                        <TextView
+                            android:id="@+id/CodeRateV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textColor="@color/grey"
+                            android:textSize="20dp"
+                            android:text="Discount Rate :"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            />
+
+
+                    <TextView
+                        android:id="@+id/MinPurchaseV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textColor="@color/grey"
+                        android:textSize="20dp"
+                        android:text="Min Purchase:"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="10dp"
+
+                       />
+
+
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/CodeRate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:text="30%"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="10dp"
+
+                            >
+
+                        </TextView>
+                        <TextView
+                            android:id="@+id/MinPurchase"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:text="RM 100"
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8sp"
+                    android:background="@color/grey"
+                    android:layout_below="@+id/disL5"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/divider4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/disL4">
+
+
+
+
+
+                        <TextView
+                            android:id="@+id/MaximumDisocuntV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textColor="@color/grey"
+                            android:textSize="20dp"
+                            android:text="Max Discount:"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/LimitPerUserV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textColor="@color/grey"
+                            android:textSize="20dp"
+                            android:text="Limit per User:"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/MaximumDisocunt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:text="30%"
+                            android:layout_marginLeft="90dp"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/LimitPerUser2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:text="200"
+                            android:layout_marginLeft="180dp"
+                            android:layout_marginTop="10dp"
+
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
